@@ -16,7 +16,7 @@ def cls():
 def login(tokens):
     chrome_path = 'C:/Program Files (x86)/Google/Chrome/Application/chrome.exe %s'
     webbrowser.get(chrome_path).open(url)
-    time.sleep(1.5)
+    time.sleep(3)
     pyautogui.hotkey('ctrl', 'shift', 'i')
     pyautogui.click(x=1450, y=810)
     pyautogui.click()
@@ -36,7 +36,7 @@ location.reload();
 
     cls()
     print(f";> Attempted to login to {tokens}...")
-    restart = input("Type anything to restart;>")
+    input("Type anything to restart;>")
     start()
 
     
