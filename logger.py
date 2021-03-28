@@ -21,7 +21,6 @@ def login(tokens):
     pyautogui.click(x=1450, y=810)
     pyautogui.click()
     pyautogui.click()
-    time.sleep(1)
     pyautogui.write ("""function login(token) {
 setInterval(() => {
 document.body.appendChild(document.createElement `iframe`).contentWindow.localStorage.token = `"${token}"`
@@ -51,6 +50,7 @@ def start():
  |______\____/ \_____|\_____|______|_|  \_\
                                            
                                            """)
+    print("NOTE: BE SURE TO LOG OUT OF DISCORD BEFORE USE!")
     tokens = input("\n;>Enter a Token To Log: ")
     login(tokens)
 
